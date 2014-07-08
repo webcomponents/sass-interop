@@ -1,5 +1,7 @@
 # [Polymer](http://www.polymer-project.org/) + [Sass](http://sass-lang.com/)
 
+![Polymer + Sass](https://cloud.githubusercontent.com/assets/398893/3516917/3105d048-06e7-11e4-946f-636b74f62140.jpg)
+
 > A demo of interoperability between [Polymer](http://www.polymer-project.org/) and [Sass](http://sass-lang.com/).
 
 ## Getting started
