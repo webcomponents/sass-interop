@@ -1,0 +1,36 @@
+// Mixins
+
+@mixin animation ($name, $duration, $delay, $ease) {
+    -webkit-animation: $name $duration $delay $ease;
+    -moz-animation:    $name $duration $delay $ease;
+    -ms-animation:     $name $duration $delay $ease;
+    -o-animation:      $name $duration $delay $ease;
+    animation:         $name $duration $delay $ease;
+}
+
+@mixin scale ($factor) {
+    -webkit-transform: scale($factor);
+    -moz-transform:    scale($factor);
+    -ms-transform:     scale($factor);
+    -o-transform:      scale($factor);
+    transform:         scale($factor);
+}
+
+@mixin scale-anim () {
+    to { @include scale(1.4); }
+}
+
+// Definitions
+
+:host {
+    color: red;
+    font-size: 1.5em;
+    @include scale(0.9);
+    @include animation(pulse, 0.5s, 0, infinite alternate-reverse);
+}
+
+@-webkit-keyframes pulse { @include scale-anim; }
+@-moz-keyframes    pulse { @include scale-anim; }
+@-ms-keyframes     pulse { @include scale-anim; }
+@-o-keyframes      pulse { @include scale-anim; }
+@keyframes         pulse { @include scale-anim; }
