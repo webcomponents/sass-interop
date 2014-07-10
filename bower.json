@@ -1,7 +1,10 @@
 {
-    "name": "sass-interop",
     "private": true,
+    "name": "sass-interop",
     "dependencies": {
         "polymer": "Polymer/polymer#~0.3.3"
+    },
+    "resolutions": {
+        "polymer": ">=0.3.0 <1.0.0"
     }
 }
